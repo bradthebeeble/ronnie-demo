@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="browse"
+        options={{
+          title: 'Browse',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'globe' : 'globe-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
