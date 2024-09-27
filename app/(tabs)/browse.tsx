@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { WebView } from 'react-native-webview';
+import WebView from 'react-native-webview';
 
 import { ThemedView } from '@/components/ThemedView';
 
