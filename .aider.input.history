@@ -1,0 +1,219 @@
+
+# 2024-09-27 14:49:12.707524
++/add app/(tabs)/index.tsx
+
+# 2024-09-27 14:49:54.294360
++Please change Step 1 that instead of saying 'Try it' it will say 'Hi, Ronnie'
+
+# 2024-09-27 14:50:16.274674
++no
+
+# 2024-09-27 14:51:22.169584
++Currently the app has two tabs: "Home", "Explore". Please add a third tab named "Browse" and add an icon of the Globe
+
+# 2024-09-27 14:52:14.651729
++no
+
+# 2024-09-27 14:52:17.555963
++/undo
+
+# 2024-09-27 14:54:02.437736
++/add _la
+
+# 2024-09-27 14:54:05.741261
++n
+
+# 2024-09-27 14:54:09.549566
++/add app/(tabs)/_layout.tsx
+
+# 2024-09-27 14:54:19.447038
++/help
+
+# 2024-09-27 14:54:29.470957
++/drop app/(tabs)/browse.tsx
+
+# 2024-09-27 14:54:31.829249
++/list
+
+# 2024-09-27 14:54:35.115107
++/ls
+
+# 2024-09-27 14:54:57.522791
++Add a third tab with the label "Browse"
+
+# 2024-09-27 14:55:17.541309
++no
+
+# 2024-09-27 14:55:49.276996
++In the Browse Tab, provide a full browsing experience which allows you to enter a URL and browse to the URL (like a mini browser inside the app)
+
+# 2024-09-27 14:56:27.396025
++/run npm install react-native-webview
+
+# 2024-09-27 14:56:40.326763
++no
+
+# 2024-09-27 14:56:51.396896
++/undo
+
+# 2024-09-27 14:57:15.074602
++In the Browse Tab, provide a full browsing experience which allows you to enter a URL and browse to the URL (like a mini browser inside the app). Make sure the pane has a place for the user to enter a URL
+
+# 2024-09-27 14:57:34.468653
++/run npx expo start
+
+# 2024-09-27 14:57:41.811747
++no
+
+# 2024-09-27 14:58:19.597780
++fix "TypeError: Cannot read property 'WebView' of undefined"
+
+# 2024-09-27 14:58:32.304904
++/run npm install react-native-webview
+
+# 2024-09-27 14:58:37.841934
++no
+
+# 2024-09-27 14:58:57.661125
++/undo
+
+# 2024-09-27 14:59:25.492667
++Please add another tab with the label "To Do"
+
+# 2024-09-27 15:00:48.748626
++/clipboard
+
+# 2024-09-27 15:01:25.856668
++In the To Do list pane, create a small To Do app; use the design and functionality from the image in the clipboard
+
+# 2024-09-27 15:03:35.999712
++Now, I'd like you to update the content pane of the Browse tab, by adding the React implementation of ios webkit-webvide. it should initially load with the www.apple.com website
+
+# 2024-09-27 15:03:49.473454
++/run npm install react-native-webview
+
+# 2024-09-27 15:04:27.308446
++i'm getting an error, "RNCWebView" was not found in the UIManager. 
+
+# 2024-09-27 15:04:39.397312
++/run npm list react-native-webview
+
+# 2024-09-27 15:04:46.308891
++/run npm uninstall react-native-webview
+
+# 2024-09-27 15:04:48.070282
++/run npm install react-native-webview
+
+# 2024-09-27 15:04:55.464249
++no
+
+# 2024-09-27 15:07:44.272953
++/drop ../../../../private/var/folders/z2/c9lb5dq50210drx3b6l432_m0000gn/T/tmpk3j7cvv2/clipboard_image.png
+
+# 2024-09-27 15:07:49.188082
++clear
+
+# 2024-09-27 15:08:25.184319
++in the Browse pane, add a URL field allowing the user to enter any URL. Once clicked, the app should browse to that new URL.
+
+# 2024-09-27 15:09:01.617713
++no
+
+# 2024-09-27 15:09:11.783664
++That is great!! I'm really enjoying it
+
+# 2024-09-27 15:11:01.673496
++Please add an overlay component in the Browse pane which is always on. Inside the pane, show a percentage that represnet my relative scrolling location with respect to the entire page content. Update it as the user scrolls the page.
+
+# 2024-09-27 15:12:00.928604
++no
+
+# 2024-09-27 15:14:11.322808
++In the Browse pane, add a button which is always on. The button should say "Save Pics". When the user clicks it, download all the images in the viewing port (NOT ALL THE IMAGES IN THE WEBPAGE, JUST THOSE VISIBLE IN THE VIEWING PANE!!!). Each time the user clicks the button: 1. Create a new folder with a random name (but prefix with img_) and save these images there.
+
+# 2024-09-27 15:14:41.757641
++/run expo install expo-file-system
+
+# 2024-09-27 15:14:51.001789
++no
+
+# 2024-09-27 15:15:10.663663
++I got an error "Identifier 'onMessage" has already been declared" - pls fix
+
+# 2024-09-27 15:16:46.809919
++no
+
+# 2024-09-27 15:18:02.720275
++when the user clicks the Save Pics please also print to the console the full absolute path of the new directory
+
+# 2024-09-27 15:18:19.036405
++no
+
+# 2024-09-27 15:18:21.178792
++I got an error "Identifier 'onMessage" has already been declared" - pls fix
+
+# 2024-09-27 15:18:39.071254
++no
+
+# 2024-09-27 15:20:18.915965
++it seems that you are creating a new folder but it is empty. pls add the code to save the images in the view port to the folder. pls also print to the console the name the iamges you downloaded
+
+# 2024-09-27 15:21:01.813138
++no
+
+# 2024-09-27 15:22:29.417387
++In order to indentify what are the images in the viewport, 1/ access the HTML code of the browsing URL 2/ create a list of all images sources (all URLs inside the HTML that point to an image) 3/ identofy those who see to match images in the viewport 4/ download these only
+
+# 2024-09-27 15:22:52.902227
++no
+
+# 2024-09-27 15:23:07.209621
++/undo
+
+# 2024-09-27 15:26:53.193560
++Add an always on  button in the Browse Pane called 'Save'. Once clicked, you should do the equivilant of a user long pressing an image and saving it to the photo gallery (save the iamge which is currnlty visible on the view port) 
+
+# 2024-09-27 15:27:23.006523
++/run npx expo install expo-media-library
+
+# 2024-09-27 15:28:02.921540
++not
+
+# 2024-09-27 15:28:06.596981
++no
+
+# 2024-09-27 15:28:08.396129
++n
+
+# 2024-09-27 15:28:26.002599
++fix "cannot find native module 'ExpoMediaLibrary'
+
+# 2024-09-27 15:28:37.579426
++/run npx expo install expo-media-library
+
+# 2024-09-27 15:28:44.005748
++no
+
+# 2024-09-27 15:29:15.676571
++/undo
+
+# 2024-09-27 15:29:48.217105
++Add an always visible   button in the Browse Pane called 'Save Pics'. Once clicked, you should do the equivilant of a user long pressing an image and saving it to the photo gallery (save the iamge which is currnlty visible on the view port) 
+
+# 2024-09-27 15:30:09.125251
++/run npx expo install expo-media-library
+
+# 2024-09-27 15:30:15.689176
++no
+
+# 2024-09-27 15:32:17.322580
++he can't find native module 'ExpoMediaLibrary'
+
+# 2024-09-27 15:32:27.711532
++/run npx expo install expo-media-library
+
+# 2024-09-27 15:32:35.425398
++no
+
+# 2024-09-27 15:32:40.064119
++/undo
